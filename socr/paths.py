@@ -3,8 +3,8 @@ import sys
 import os
 
 
-_data_dir   = xdg.BaseDirectory.save_data_path('ocrscrot')
-_config_dir = xdg.BaseDirectory.save_config_path('ocrscrot')
+_data_dir   = xdg.BaseDirectory.save_data_path('socr')
+_config_dir = xdg.BaseDirectory.save_config_path('socr')
 TEMP_FILE   = '/tmp/socr-temp-file'
 PICKLE_PATH = os.path.join(_data_dir, 'screenshots.pickle')
 sys.path.append(_config_dir)
