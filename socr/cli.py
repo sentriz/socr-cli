@@ -3,9 +3,9 @@
 import click 
 import sys
 import os
-import socr.files
-import socr.paths
-import socr.ocr
+import socr.files as files
+import socr.paths as paths
+import socr.ocr   as ocr
 
 @click.group()
 def cli():
