@@ -17,6 +17,7 @@ Commands:
   - [imagemagick](https://www.imagemagick.org/script/index.php)
   - [tesseract](https://github.com/tesseract-ocr/tesseract)
   - [exiftool](https://www.sno.phy.queensu.ca/~phil/exiftool/)
+  - python 3.6+
   - probably linux
   
 # setup
