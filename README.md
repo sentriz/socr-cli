@@ -20,9 +20,10 @@ Commands:
   - probably linux
   
 # setup
+  - install above requirements
   - `pip3 install --user git+https://github.com/sentriz/socr.git`
-  - `edit ~/.config/socr/config.py` see example config
-  - `socr build` run once per install. looks at all your screenshots, extracts the text, embeds the text, and builds the database
+  - `edit ~/.config/socr/config.py` (see example config)
+  - `socr build` (run once per install) looks at all your screenshots, extracts the text, embeds the text, and builds the database
   - add `socr add <path to screenshot>` to [your screenshoting tool](https://github.com/sentriz/dotfiles/commit/57987138e4b09615b8237b6ac67e4d751dfbabb1)
 
 # example usage
