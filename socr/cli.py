@@ -7,6 +7,7 @@ import socr.files as files
 import socr.paths as paths
 import socr.ocr   as ocr
 
+
 @click.group()
 def cli():
     pass
