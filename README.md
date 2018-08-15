@@ -29,7 +29,7 @@ Commands:
 
 # example usage
   - `socr search <text>` to see matching files
-  - `feh $(socr search <text>)` with, for example, [feh](https://wiki.archlinux.org/index.php/Feh) too view all matching screenshots
+  - `feh $(socr search <text>)` with, for example, [feh](https://wiki.archlinux.org/index.php/Feh) to view all matching screenshots
   - `rm $(socr search <secret>)` to delete screenshots with matching text (say you captured your password accidentally)
   
 # example config
