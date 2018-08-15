@@ -3,9 +3,10 @@
 import click 
 import sys
 import os
-import socr.files as files
-import socr.paths as paths
-import socr.ocr   as ocr
+
+from socr import files
+from socr import ocr
+from socr import paths
 
 
 @click.group()
@@ -47,4 +48,4 @@ def search(query):
 
 
 if __name__ == '__main__':
-    cli()
+    cli() 

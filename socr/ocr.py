@@ -31,3 +31,13 @@ def embed(text, original_file):
         original_file,
         '-execute'
     ))
+
+
+def read(original_file):
+    return check_output((
+        'exiftool',
+        '-description',
+        original_file
+    ))
+
+

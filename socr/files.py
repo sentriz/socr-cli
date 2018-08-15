@@ -1,11 +1,9 @@
 import glob
 import pickle
 import re
-import subprocess 
-import sys
-import os
 
-import socr.paths as paths
+from socr import paths
+from socr.ocr import read
 
 
 def parse_exif(raw_data):
@@ -15,14 +13,9 @@ def parse_exif(raw_data):
         return match.group(1)
 
 
-def get_description(filename):
-    result = subprocess.check_output(['exiftool', '-description', filename])
-    return parse_exif(result)
-
-
 def read_files(pattern=paths.SCROT_PATTERN, pickle_path=paths.PICKLE_PATH):
     for screenshot in glob.glob(pattern):
-        yield screenshot, get_description(screenshot)
+        yield screenshot, parse_exif(read(screenshot))
 
 
 def write_pickle(pics, pickle_path=paths.PICKLE_PATH):

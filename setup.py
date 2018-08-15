@@ -1,5 +1,6 @@
 from setuptools import setup
 
+
 setup(
     name="socr",
     version="0.0",
